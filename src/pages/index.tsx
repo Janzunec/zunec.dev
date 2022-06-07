@@ -17,34 +17,45 @@ const Home: NextPage = () => {
 				/>
 				<link rel='icon' href='/favicon.ico' />
 			</Head>
-			<div className=' w-full min-h-screen flex items-center justify-center animate-fade-in'>
-				<>
-					{/* <Title /> */}
-					<article className=' w-1/3 mr-32 mt-10'>
-						<div className='perspective-text'>
-							<div className='perspective-line'>
-								<p></p>
-								<p>17 years old</p>
-							</div>
-							<div className='perspective-line'>
-								<p>17 y/o</p>
-								<p>programmer</p>
-							</div>
-							<div className='perspective-line'>
-								<p>programmer</p>
-								<p>& full stack</p>
-							</div>
-							<div className='perspective-line'>
-								<p>& full stack</p>
-								<p>developer</p>
-							</div>
-							<div className='perspective-line'>
-								<p>developer</p>
-								<p></p>
-							</div>
+			<div className=' w-full  min-h-screen flex-col flex items-center justify-center animate-fade-in'>
+				{/* <Title /> */}
+				<article className=' w-fit mr-32 mt-10 '>
+					<div className='perspective-text'>
+						<div className='perspective-line'>
+							<p></p>
+							<p>17 years old</p>
 						</div>
-					</article>
-				</>
+						<div className='perspective-line'>
+							<p>17 y/o</p>
+							<p>programmer</p>
+						</div>
+						<div className='perspective-line'>
+							<p>programmer</p>
+							<p>& full stack</p>
+						</div>
+						<div className='perspective-line'>
+							<p>& full stack</p>
+							<p>developer</p>
+						</div>
+						<div className='perspective-line'>
+							<p>developer</p>
+							<p></p>
+						</div>
+					</div>
+				</article>
+				<div className=' mt-36 w-full text-center text-primary font-jtm text-2xl'>
+					🚧THIS WEBSITE IS CURRENTLY UNDER CONSTRUCTION🚧
+				</div>
+				<div className='w-full text-center text-primary font-jtm text-2xl'>
+					(TO SEE MY PORTFOLIO, GO TO MY{' '}
+					<a
+						href='https://our-app.pages.dev'
+						className=' text-secondary hover:underline transform-gpu duration-150'
+					>
+						OLD WEBSITE
+					</a>
+					)
+				</div>
 			</div>
 		</>
 	);

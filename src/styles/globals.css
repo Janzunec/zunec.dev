@@ -19,6 +19,27 @@ body {
 	padding: 0;
 }
 
+@layer base {
+	.topurple {
+		@apply text-primary hover:text-secondary transition-all duration-150 transform-gpu;
+	}
+	.tocyan {
+		@apply text-secondary hover:text-primary transition-all duration-150 ease-stretch-out transform-gpu;
+	}
+	.invisible {
+		@apply hidden;
+	}
+	.iconText {
+		@apply absolute w-auto p-1 mb-2 min-w-max opacity-0
+			rounded-md shadow-md text-white bg-gray-700
+			text-xs font-bold -translate-y-16 bottom-full
+			transition-all duration-200 scale-0 origin-bottom;
+	}
+	.navLink {
+		@apply flex items-center justify-center font-main text-3xl text-primary laptop:hover:text-secondary transform laptop:hover:scale-125 transition-all duration-300;
+	}
+}
+
 .perspective-text {
 	color: white;
 	font-family: Arial;
@@ -34,8 +55,6 @@ body {
 	position: relative;
 }
 .perspective-line p {
-	margin-top: 200px;
-	margin: 0;
 	height: 50px;
 	line-height: 65px;
 	transition: all 0.6s ease-in-out;
@@ -101,17 +120,15 @@ body {
 @media screen and (max-width: 610px) {
 	.perspective-container {
 		margin-left: 30px;
-		width: 300px !important;
+		width: 300px;
 	}
 	.perspective-line {
 		height: 48px;
 	}
 	.perspective-text {
-		font-size: 39px !important;
+		font-size: 39px;
 	}
 	p {
-		margin-top: 200px;
-		margin: 0;
 		height: 44px;
 		line-height: 44px;
 		transition: all 0.6s ease-in-out;
@@ -122,72 +139,63 @@ body {
 
 	.perspective-line:nth-child(1) {
 		left: 3px;
-		background: linear-gradient(to bottom, #00ffff00, #00ffff00, #00ffff);
 	}
 
 	.perspective-line:nth-child(2) {
 		left: 30px;
-		background: linear-gradient(to bottom, #00ffff, #9015fc);
 	}
 
 	.perspective-line:nth-child(3) {
 		left: 57px;
-		background: linear-gradient(to bottom, #9015fc, #9015fc);
 	}
 
 	.perspective-line:nth-child(4) {
 		left: 84px;
-		background: linear-gradient(to bottom, #9015fc, #00ffff, #00ffff);
 	}
 	.perspective-line:nth-child(5) {
 		left: 111px;
-		background: linear-gradient(to top, #00ffff00, #00ffff00, #00ffff);
 	}
 }
 @media screen and (max-width: 500px) {
 	.perspective-container {
 		margin-left: 20px;
-		width: 240px !important;
+		width: 250px;
 	}
 	.perspective-line {
 		height: 35px;
 	}
 	.perspective-text {
-		font-size: 32px !important;
+		font-size: 32px;
 	}
 	p {
-		margin-top: 200px;
-		margin: 0;
-		height: 33px;
-		line-height: 33px;
+		height: 30px;
+		line-height: 1px;
 		transition: all 0.6s ease-in-out;
 	}
 	.perspective-text:hover p {
 		transform: translate(0, -42px);
 	}
+	.perspective-text:active p {
+		transform: translate(0, -42px);
+	}
 
 	.perspective-line:nth-child(1) {
 		left: 3px;
-		background: linear-gradient(to bottom, #00ffff00, #00ffff00, #00ffff);
 	}
 
 	.perspective-line:nth-child(2) {
 		left: 23px;
-		background: linear-gradient(to bottom, #00ffff, #00ffff, #167be0);
 	}
 
 	.perspective-line:nth-child(3) {
 		left: 43px;
-		background: linear-gradient(to bottom, #167be0, #135fab);
 	}
 
 	.perspective-line:nth-child(4) {
 		left: 63px;
-		background: linear-gradient(to bottom, #135fab, #c200ae, #c200ae);
 	}
 	.perspective-line:nth-child(5) {
 		left: 82px;
-		background: linear-gradient(to top, #00ffff00, #00ffff00, #c200ae);
 	}
 }
 
@@ -207,4 +215,15 @@ body {
 }
 ::-webkit-scrollbar-thumb:active {
 	@apply bg-gray-500;
+}
+
+::-moz-selection {
+	/* Code for Firefox */
+	color: #6a22f8;
+	background: #00ffff;
+}
+
+::selection {
+	color: #6a22f8;
+	background: #00ffff;
 }
