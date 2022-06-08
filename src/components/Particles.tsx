@@ -1,9 +1,8 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Particles from 'react-tsparticles';
+import { loadFull } from 'tsparticles';
 
-interface ParticlesCompProps {}
-
-const ParticlesComp: React.FC<ParticlesCompProps> = () => {
+const ParticlesComp: React.FC = () => {
 	let particlesLimit;
 
 	const checkWindowSize = () => {
@@ -14,18 +13,23 @@ const ParticlesComp: React.FC<ParticlesCompProps> = () => {
 		}
 	};
 
-	checkWindowSize();
+	useEffect(() => {
+		checkWindowSize();
+	});
 
-	window.addEventListener('resize', checkWindowSize);
+	const particlesInit = async (main: any) => {
+		await loadFull(main);
+	};
+
 	return (
-		<div>
+		<div className='z-[-1]'>
 			<Particles
-				id="tsparticles"
+				id='tsparticles'
 				options={{
 					fps_limit: 50,
 					particles: {
 						number: {
-							limit: particlesLimit,
+							limit: 50,
 						},
 						color: {
 							value: '#383838',
@@ -40,7 +44,8 @@ const ParticlesComp: React.FC<ParticlesCompProps> = () => {
 						},
 					},
 				}}
-				className=" w-screen h-screen fixed z-0"
+				init={particlesInit}
+				className=' w-screen h-screen fixed top-0 left-0'
 			/>
 		</div>
 	);

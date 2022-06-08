@@ -4,15 +4,10 @@ import { useEffect } from 'react';
 import { useRouter } from 'next/router';
 import Navbar from '../components/Navbar';
 import Head from 'next/head';
+import ParticlesComp from '../components/Particles';
 
 function MyApp({ Component, pageProps }: AppProps) {
 	const router = useRouter();
-
-	useEffect(() => {
-		if (router.pathname !== '/') {
-			document.querySelector('.threeBack')?.remove();
-		}
-	}, [router.pathname]);
 
 	return (
 		<>
@@ -37,7 +32,10 @@ function MyApp({ Component, pageProps }: AppProps) {
 				/>
 			</Head>
 			<Navbar />
-			<Component {...pageProps} />
+			<ParticlesComp />
+			<main className=' z-[1]'>
+				<Component {...pageProps} />
+			</main>
 		</>
 	);
 }

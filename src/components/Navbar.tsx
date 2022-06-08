@@ -8,18 +8,17 @@ import { VscFolderActive, VscTools } from 'react-icons/vsc';
 
 const Navbar: React.FC = () => {
 	const { pathname } = useRouter();
-	console.log(pathname);
 
 	return (
-		<nav className='fixed w-full h-auto tablet:h-16 justify-between text-2xl bg-mainbg desktop:bg-transparent flex align-middle text-white min-w-full left-0 bottom-0 border-t-2  tablet:border-t-0 tablet:top-0 tablet:border-b border-gray-600 z-30'>
+		<nav className=' w-full h-auto tablet:h-16 justify-between text-2xl bg-mainbg desktop:bg-transparent flex align-middle text-white min-w-full fixed left-0 bottom-0 border-t-2  tablet:border-t-0 tablet:top-0 tablet:border-b border-gray-600 z-30'>
 			<Link href='/'>
 				<div className='hidden w-1/6 laptop:w-1/8 tablet:flex items-center justify-center pb-1 font-lob text-3xl text-secondary hover:text-primary transform hover:scale-125 transition-all duration-300'>
 					JZ
 				</div>
 			</Link>
-			<ul className='w-full h-10 tablet:w-2/3 laptop:w-1/2 text-primary text-3xl laptop:text-3xl font-main grid grid-cols-4 laptop:grid-cols-5 border-0 py-3 px-0 m-0'>
+			<ul className='w-screen tablet:w-2/3 laptop:w-1/2 text-primary text-3xl laptop:text-3xl font-main grid grid-cols-5 tablet:grid-cols-4  border-0 py-3 px-0 m-0'>
 				<Link href='/'>
-					<div className=' hover:text-secondary transform-gpu duration-150  hover:scale-125'>
+					<div className='navLink tablet:hidden'>
 						<AiOutlineHome
 							className={`${
 								pathname === '/' ? 'hidden' : 'inline-block'
@@ -32,12 +31,10 @@ const Navbar: React.FC = () => {
 									: 'hidden'
 							} tablet:hidden`}
 						/>
-						<span className='hidden'>Home</span>
 					</div>
 				</Link>
-
 				<Link href='/about'>
-					<div className=' hover:text-secondary transform-gpu duration-150  hover:scale-125'>
+					<div className='navLink'>
 						<MdPersonOutline
 							className={`${
 								pathname === '/about'
@@ -47,7 +44,7 @@ const Navbar: React.FC = () => {
 						/>
 						<MdPerson
 							className={`${
-								pathname === 'about'
+								pathname === '/about'
 									? 'inline-block text-secondary'
 									: 'hidden'
 							} tablet:hidden`}
@@ -57,9 +54,8 @@ const Navbar: React.FC = () => {
 						</span>
 					</div>
 				</Link>
-
 				<Link href='/skills'>
-					<div className=' hover:text-secondary transform-gpu duration-150  hover:scale-125'>
+					<div className='navLink'>
 						<VscTools
 							className={`${
 								pathname.includes('skills')
@@ -72,9 +68,8 @@ const Navbar: React.FC = () => {
 						</span>
 					</div>
 				</Link>
-
 				<Link href='/projects/'>
-					<div className=' hover:text-secondary transform-gpu duration-150  hover:scale-125'>
+					<div className='navLink'>
 						<VscFolderActive
 							className={`${
 								pathname.includes('projects')
@@ -87,9 +82,8 @@ const Navbar: React.FC = () => {
 						</span>
 					</div>
 				</Link>
-
 				<Link href='/contact'>
-					<div className=' hover:text-secondary transform-gpu duration-150  hover:scale-125 scale-2'>
+					<div className='navLink'>
 						<RiContactsBookLine
 							className={`${
 								pathname === 'contact'
@@ -109,14 +103,26 @@ const Navbar: React.FC = () => {
 						</span>
 					</div>
 				</Link>
+				<hr
+					className={`h-1 w-full hidden tablet:block bg-primary border-0 mt-1 transition-all duration-300 transform translate-x-navSm laptop:translate-x-navLg  ${
+						pathname === '/about'
+							? 'tablet:ml-aboutSm laptop:ml-aboutLg'
+							: ''
+					} ${
+						pathname === '/skills'
+							? 'tablet:ml-skillsSm laptop:ml-skillsLg'
+							: ' '
+					} ${
+						pathname === '/projects'
+							? 'tablet:ml-projectsSm laptop:ml-projectsLg'
+							: ''
+					} ${
+						pathname === '/contact'
+							? ' tablet:ml-contactSm laptop:ml-contactLg'
+							: ''
+					}`}
+				/>
 			</ul>
-			<hr
-				className={` absolute w-[10vw] top-16 h-1 hidden tablet:block bg-primary border-0 transition-all duration-300 transform  ${
-					pathname === '/about' ? ' translate-x-[575%]' : ''
-				} ${pathname === '/skills' ? 'translate-x-[675%]' : ' '} ${
-					pathname === '/projects' ? 'translate-x-[775%]' : ''
-				} ${pathname === '/contact' ? 'translate-x-[875%]' : ''}`}
-			/>
 		</nav>
 	);
 };

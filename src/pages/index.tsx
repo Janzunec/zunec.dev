@@ -17,9 +17,9 @@ const Home: NextPage = () => {
 				/>
 				<link rel='icon' href='/favicon.ico' />
 			</Head>
-			<div className=' w-full  min-h-screen flex-col flex items-center justify-center animate-fade-in'>
+			<div className=' w-full z-20  min-h-screen flex-col flex items-center justify-center animate-fade-in'>
 				{/* <Title /> */}
-				<article className=' w-fit mr-32 mt-10 '>
+				<article className=' w-fit mr-32 mt-10 laptop:mt-40 '>
 					<div className='perspective-text'>
 						<div className='perspective-line'>
 							<p></p>

@@ -1,5 +1,4 @@
 import * as React from 'react';
-import Chart from 'chart.js/auto';
 import { Bar } from 'react-chartjs-2';
 
 interface ChartJanProps {}
@@ -12,9 +11,9 @@ const ChartJan: React.FC<ChartJanProps> = () => {
 				label: 'Skills',
 				data: [65, 59, 80, 81],
 				backgroundColor: 'rgba(75,192,192,1)',
-				borderWidth: 1
-			}
-		]
+				borderWidth: 1,
+			},
+		],
 	};
 
 	// const myChart = new Chart(ctx, {
@@ -58,13 +57,13 @@ const ChartJan: React.FC<ChartJanProps> = () => {
 					plugins: {
 						title: {
 							display: true,
-							text: 'Cryptocurrency prices'
+							text: 'Cryptocurrency prices',
 						},
 						legend: {
 							display: true,
-							position: 'bottom'
-						}
-					}
+							position: 'bottom',
+						},
+					},
 				}}
 			/>
 		</div>

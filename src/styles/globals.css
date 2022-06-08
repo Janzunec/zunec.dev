@@ -20,6 +20,9 @@ body {
 }
 
 @layer base {
+	body {
+		@apply min-h-screen w-screen overflow-x-hidden bg-mainbg cursor-default desktop:overflow-hidden;
+	}
 	.topurple {
 		@apply text-primary hover:text-secondary transition-all duration-150 transform-gpu;
 	}

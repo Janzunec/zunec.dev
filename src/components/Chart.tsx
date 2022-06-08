@@ -11,7 +11,6 @@ import {
 	Legend,
 	registerables,
 } from 'chart.js';
-import { type } from 'os';
 
 interface ChartJanProps {}
 
