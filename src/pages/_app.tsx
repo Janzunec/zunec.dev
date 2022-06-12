@@ -32,8 +32,10 @@ function MyApp({ Component, pageProps }: AppProps) {
 				/>
 			</Head>
 			<Navbar />
-			<ParticlesComp />
-			<main className=' z-[1]'>
+			<div className=' -z-50'>
+				<ParticlesComp />
+			</div>
+			<main className=' z-50'>
 				<Component {...pageProps} />
 			</main>
 		</>

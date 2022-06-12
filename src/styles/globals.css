@@ -24,10 +24,10 @@ body {
 		@apply min-h-screen w-screen overflow-x-hidden bg-mainbg cursor-default desktop:overflow-hidden;
 	}
 	.topurple {
-		@apply text-primary hover:text-secondary transition-all duration-150 transform-gpu;
+		@apply text-primary hover:text-secondary transition-all duration-150 transform-gpu inline-block z-50;
 	}
 	.tocyan {
-		@apply text-secondary hover:text-primary transition-all duration-150 ease-stretch-out transform-gpu;
+		@apply text-secondary hover:text-primary transition-all duration-150 ease-stretch-out transform-gpu inline-block z-50;
 	}
 	.invisible {
 		@apply hidden;

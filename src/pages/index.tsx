@@ -17,7 +17,7 @@ const Home: NextPage = () => {
 				/>
 				<link rel='icon' href='/favicon.ico' />
 			</Head>
-			<div className=' w-full z-20  min-h-screen flex-col flex items-center justify-center animate-fade-in'>
+			<div className=' w-full z-50  min-h-screen flex-col flex items-center justify-center animate-fade-in'>
 				{/* <Title /> */}
 				<article className=' w-fit mr-32 mt-10 laptop:mt-40 '>
 					<div className='perspective-text'>
@@ -43,10 +43,10 @@ const Home: NextPage = () => {
 						</div>
 					</div>
 				</article>
-				<div className=' mt-36 w-full text-center text-primary font-jtm text-2xl'>
+				<div className=' mt-36 w-full text-center text-primary font-jtm text-2xl z-20'>
 					🚧THIS WEBSITE IS CURRENTLY UNDER CONSTRUCTION🚧
 				</div>
-				<div className='w-full text-center text-primary font-jtm text-2xl'>
+				<div className='w-full text-center text-primary font-jtm text-2xl z-20'>
 					(TO SEE MY PORTFOLIO, GO TO MY{' '}
 					<a
 						href='https://our-app.pages.dev'

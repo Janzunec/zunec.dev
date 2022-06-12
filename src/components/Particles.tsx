@@ -22,11 +22,11 @@ const ParticlesComp: React.FC = () => {
 	};
 
 	return (
-		<div className='z-[-1]'>
+		<div className=' -z-50'>
 			<Particles
 				id='tsparticles'
 				options={{
-					fps_limit: 50,
+					fps_limit: 60,
 					particles: {
 						number: {
 							limit: 50,
@@ -42,10 +42,14 @@ const ParticlesComp: React.FC = () => {
 						move: {
 							enable: true,
 						},
+						zIndex: {
+							value: -1,
+							sizeRate: 1,
+						},
 					},
 				}}
 				init={particlesInit}
-				className=' w-screen h-screen fixed top-0 left-0'
+				className=' w-screen h-screen z-0 fixed top-0 left-0'
 			/>
 		</div>
 	);

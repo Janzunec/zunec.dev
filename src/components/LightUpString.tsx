@@ -9,7 +9,7 @@ const LightUpString: React.FC<LightUpStringProps> = ({ content, color }) => {
 	return (
 		<>
 			{content.split('').map((char, i) => (
-				<span key={i} className={color + 'z-20'}>
+				<span key={i} className={`z-20 ${color}`}>
 					{char}
 				</span>
 			))}
