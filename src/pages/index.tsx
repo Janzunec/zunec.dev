@@ -19,42 +19,44 @@ const Home: NextPage = () => {
 			</Head>
 			<div className=' w-full z-50  min-h-screen flex-col flex items-center justify-center animate-fade-in'>
 				{/* <Title /> */}
-				<article className=' w-fit mr-32 mt-10 laptop:mt-40 '>
+				<article className=' w-fit tablet:mr-32 mt-10 mr-6 laptop:mt-40 '>
 					<div className='perspective-text'>
 						<div className='perspective-line'>
-							<p></p>
-							<p>17 years old</p>
+							<div></div>
+							<div>17 years old</div>
 						</div>
 						<div className='perspective-line'>
-							<p>17 y/o</p>
-							<p>programmer</p>
+							<div>17 y/o</div>
+							<div>programmer</div>
 						</div>
 						<div className='perspective-line'>
-							<p>programmer</p>
-							<p>& full stack</p>
+							<div>programmer</div>
+							<div>& full stack</div>
 						</div>
 						<div className='perspective-line'>
-							<p>& full stack</p>
-							<p>developer</p>
+							<div>& full stack</div>
+							<div>developer</div>
 						</div>
 						<div className='perspective-line'>
-							<p>developer</p>
-							<p></p>
+							<div>developer</div>
+							<div></div>
 						</div>
 					</div>
 				</article>
-				<div className=' mt-36 w-full text-center text-primary font-jtm text-2xl z-20'>
-					🚧THIS WEBSITE IS CURRENTLY UNDER CONSTRUCTION🚧
-				</div>
-				<div className='w-full text-center text-primary font-jtm text-2xl z-20'>
-					(TO SEE MY PORTFOLIO, GO TO MY{' '}
-					<a
-						href='https://our-app.pages.dev'
-						className=' text-secondary hover:underline transform-gpu duration-150'
-					>
-						OLD WEBSITE
-					</a>
-					)
+				<div className='w-full fixed tablet:relative tablet:mt-36 bottom-20 tablet:bottom-0 flex flex-col justify-center items-center'>
+					<div className='  text-center text-primary font-jtm text-2xl z-20'>
+						🚧THIS WEBSITE IS CURRENTLY UNDER CONSTRUCTION🚧
+					</div>
+					<div className='mx-auto w-screen text-center text-primary font-jtm text-2xl z-20'>
+						(TO SEE MY PORTFOLIO, GO TO MY{' '}
+						<a
+							href='https://our-app.pages.dev'
+							className=' text-secondary hover:underline transform-gpu duration-150'
+						>
+							OLD WEBSITE
+						</a>
+						)
+					</div>
 				</div>
 			</div>
 		</>

@@ -34,9 +34,9 @@ const AboutPage: NextPage = () => {
 					name='keywords'
 					content='Jan Žunec, Jan, Žunec, Developer, Full-stack, full stack, Front-end, activity, '
 				/>
-				<link rel='icon' href='/src/publicfavicon.ico' />
+				<link rel='icon' href='favicon.ico' />
 			</Head>
-			<div className='min-w-screen min-h-screen pt-4 tablet:pt-20 mb-4 z-20'>
+			<div className='min-w-screen min-h-screen tablet:pt-20 mb-4 z-20'>
 				<div className='w-screen min-h-screen flex flex-col laptop:flex-row animate-fade-in z-20'>
 					<div className='w-screen h-auto laptop:w-1/2 pl-4'>
 						<div className='h-auto text-2xl z-20 font-lba italic text-secondary pt-2 tablet:pt-0'>
@@ -88,7 +88,7 @@ const AboutPage: NextPage = () => {
 						<div className='text-lg tablet:text-2xl font-lba italic text-secondary desktop:mt-2 z-20'>
 							<LightUpString content='<button>' color='tocyan' />
 						</div>
-						<Link href='/contact/Jan'>
+						<Link href='/contact'>
 							<button className='p-4 text-primary rounded-xl hover:bg-primary hover:text-black hover:scale-105 transform-gpu duration-150 active:scale-90 border-2 border-primary ml-6'>
 								Let&apos;s create something!
 							</button>
