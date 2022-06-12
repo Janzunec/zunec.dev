@@ -27,7 +27,7 @@ const ActivityJan: React.FC<ActivityJanProps> = () => {
 			: '';
 
 	return (
-		<div className=' max-w-activityTable tablet:max-w-lg h-auto flex flex-col'>
+		<div className=' max-w-activityTable tablet:max-w-lg h-auto flex flex-col z-20'>
 			<div className='w-auto h-10 flex flex-row justify-center text-lg text-primary border-2 border-b-0 border-gray-500 rounded-t-lg'>
 				<div className='text-2xl'>
 					<LightUpString content={username} color='topurple' />
