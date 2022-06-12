@@ -1,21 +1,17 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import Particles from 'react-tsparticles';
 import { loadFull } from 'tsparticles';
 
 const ParticlesComp: React.FC = () => {
-	let particlesLimit;
-
-	const checkWindowSize = () => {
-		if (window.innerWidth < 800) {
-			particlesLimit = 20;
-		} else {
-			particlesLimit = 50;
-		}
-	};
+	const [particleLimit, setParticleLimit] = useState(0);
 
 	useEffect(() => {
-		checkWindowSize();
-	});
+		if (window.innerWidth < 800) {
+			setParticleLimit(20);
+		} else {
+			setParticleLimit(50);
+		}
+	}, []);
 
 	const particlesInit = async (main: any) => {
 		await loadFull(main);
@@ -29,7 +25,7 @@ const ParticlesComp: React.FC = () => {
 					fps_limit: 60,
 					particles: {
 						number: {
-							limit: 50,
+							limit: particleLimit,
 						},
 						color: {
 							value: '#383838',

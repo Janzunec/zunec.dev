@@ -36,7 +36,7 @@ const AboutPage: NextPage = () => {
 				/>
 				<link rel='icon' href='/src/publicfavicon.ico' />
 			</Head>
-			<div className='min-w-screen min-h-screen pt-4 tablet:pt-20 mb-4 z-50'>
+			<div className='min-w-screen min-h-screen pt-4 tablet:pt-20 mb-4 z-20'>
 				<div className='w-screen min-h-screen flex flex-col laptop:flex-row animate-fade-in z-20'>
 					<div className='w-screen h-auto laptop:w-1/2 pl-4'>
 						<div className='h-auto text-2xl z-20 font-lba italic text-secondary pt-2 tablet:pt-0'>
@@ -57,32 +57,32 @@ const AboutPage: NextPage = () => {
 						<div className='text-lg tablet:text-2xl font-lba italic text-secondary mb-0 z-20'>
 							<LightUpString content='</h2>' color='tocyan' />
 						</div>
-						<div className='text-lg tablet:text-2xl font-lba italic text-secondary mb-0 z-20'>
+						<div className='text-lg tablet:text-2xl font-lba italic text-secondary mb-0 z-10'>
 							<LightUpString content='<p>' color='tocyan' />
 						</div>
 
-						<div className='w-full laptop:w-5/6 text-lg text-white font-light flex flex-col text-left gap-5 px-6'>
-							<p className='z-20'>
+						<div className='w-full h-auto laptop:w-5/6 text-lg text-white font-light z-30 flex flex-col text-left gap-5 px-6'>
+							<div key={1} className='z-20'>
 								I am a junior Front-End developer currently
 								schooling for a computer engineer in Maribor,
 								Slovenia. My passion is creating unforgettable
 								dynamic user expirience with different UI
 								animations and effects.
-							</p>
-							<p className='z-20'>
+							</div>
+							<div key={2} className='z-20'>
 								I am a well-organised, problem-solving,
 								hard-working person who always insists to be on
 								time and gets the job done. I love programming
 								and while I&apos;m not at my desk, I am in
 								school or at the gym.
-							</p>
-							<p className='z-20'>
+							</div>
+							<div key={3} className='z-20'>
 								Am interested in all Front-end technologies,
 								always learning and working on different
 								interesting and modern projects.
-							</p>
+							</div>
 						</div>
-						<div className='text-lg tablet:text-2xl font-lba italic text-secondary desktop:mt-2 z-20'>
+						<div className='text-lg tablet:text-2xl font-lba italic text-secondary desktop:mt-2 z-10'>
 							<LightUpString content='</p>' color='tocyan' />
 						</div>
 						<div className='text-lg tablet:text-2xl font-lba italic text-secondary desktop:mt-2 z-20'>
