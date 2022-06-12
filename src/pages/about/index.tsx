@@ -21,8 +21,8 @@ import { IconType } from 'react-icons';
 
 const AboutPage: NextPage = () => {
 	return (
-		<div className='min-w-screen min-h-screen pt-4 tablet:pt-20 mb-4 z-10'>
-			<div className='w-screen min-h-screen flex flex-col laptop:flex-row animate-fade-in'>
+		<div className='min-w-screen min-h-screen pt-4 tablet:pt-20 mb-4 z-20'>
+			<div className='w-screen min-h-screen flex flex-col laptop:flex-row animate-fade-in z-20'>
 				<div className='w-screen h-auto laptop:w-1/2 pl-4'>
 					<div className='h-auto text-2xl font-lba italic text-secondary pt-2 tablet:pt-0'>
 						<LightUpString content='<h2>' color='tocyan' />
