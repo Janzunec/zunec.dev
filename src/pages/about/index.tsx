@@ -47,7 +47,7 @@ const AboutPage: NextPage = () => {
 								content={`Hi, I'm`}
 								color={'topurple'}
 							/>
-							<div className='inline-block tablet:ml-6'>
+							<div className='inline-block ml-6'>
 								<LightUpString
 									content={`Jan`}
 									color={'topurple'}
