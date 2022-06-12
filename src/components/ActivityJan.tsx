@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import React from 'react';
 import { useLanyard } from 'use-lanyard';
 import LightUpString from './LightUpString';
@@ -38,17 +39,19 @@ const ActivityJan: React.FC<ActivityJanProps> = () => {
 				<div className='w-full h-22 grid grid-cols-4 border-2 border-gray-500 rounded-b-lg gap-0 text-white'>
 					<div className=''>
 						{spotify && (
-							<img
+							<Image
 								src={spotify?.album_art_url}
 								title={spotify.album}
 								className='w-22 h-22 rounded-bl-lg  cursor-help'
+								alt={spotify?.album}
 							/>
 						)}
 						{visualStudio && (
-							<img
+							<Image
 								src={`https://cdn.discordapp.com/app-assets/${visualStudio.application_id}/${visualStudio.assets?.large_image}.png`}
 								title={visualStudio.assets?.large_text}
 								className='w-22 h-22 rounded-bl-lg  cursor-help'
+								alt={visualStudio.name}
 							/>
 						)}
 					</div>

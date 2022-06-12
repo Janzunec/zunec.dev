@@ -51,8 +51,8 @@ const AboutPage: NextPage = () => {
 						<p>
 							I am a well-organised, problem-solving, hard-working
 							person who always insists to be on time and gets the
-							job done. I love programming and while I'm not at my
-							desk, I am in school or at the gym.
+							job done. I love programming and while I&apos;m not
+							at my desk, I am in school or at the gym.
 						</p>
 						<p>
 							Am interested in all Front-end technologies, always
@@ -68,7 +68,7 @@ const AboutPage: NextPage = () => {
 					</div>
 					<Link href='/contact/Jan'>
 						<button className='btn tablet:btn-lg outline-primary ml-6'>
-							Let's create something!
+							Let&apos;s create something!
 						</button>
 					</Link>
 					<div className='text-lg tablet:text-2xl font-lba italic text-secondary mt-2'>
