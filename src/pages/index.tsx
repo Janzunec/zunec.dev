@@ -43,7 +43,7 @@ const Home: NextPage = () => {
 						</div>
 					</div>
 				</article>
-				<div className='w-full fixed tablet:relative tablet:mt-36 bottom-20 tablet:bottom-0 flex flex-col justify-center items-center'>
+				<div className='w-full relative mt-28 tablet:mt-36 flex flex-col justify-center items-center'>
 					<div className='  text-center text-primary font-jtm text-2xl z-20'>
 						🚧THIS WEBSITE IS CURRENTLY UNDER CONSTRUCTION🚧
 					</div>

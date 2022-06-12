@@ -35,7 +35,7 @@ function MyApp({ Component, pageProps }: AppProps) {
 			<div className=' -z-50'>
 				<ParticlesComp />
 			</div>
-			<main className=' z-50'>
+			<main className='w-full  z-50'>
 				<Component {...pageProps} />
 			</main>
 		</>
