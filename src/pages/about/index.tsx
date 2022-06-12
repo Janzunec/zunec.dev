@@ -67,7 +67,7 @@ const AboutPage: NextPage = () => {
 						<LightUpString content='<button>' color='tocyan' />
 					</div>
 					<Link href='/contact/Jan'>
-						<button className='btn tablet:btn-lg outline-primary ml-6'>
+						<button className='p-4 text-primary hover:bg-primary hover:text-black hover:scale-105 transform-gpu duration-75 active:scale-90 border-2 border-primary ml-6'>
 							Let&apos;s create something!
 						</button>
 					</Link>
