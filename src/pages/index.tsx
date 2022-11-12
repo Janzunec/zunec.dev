@@ -2,6 +2,9 @@ import type { NextPage } from 'next';
 import Head from 'next/head';
 
 const Home: NextPage = () => {
+	const yearCounter =
+		new Date().getUTCFullYear() - new Date(1091590212000).getUTCFullYear();
+
 	return (
 		<>
 			<Head>
@@ -23,10 +26,10 @@ const Home: NextPage = () => {
 					<div className='perspective-text'>
 						<div className='perspective-line'>
 							<div></div>
-							<div>17 years old</div>
+							<div>{yearCounter} years old</div>
 						</div>
 						<div className='perspective-line'>
-							<div>17 y/o</div>
+							<div>{yearCounter} y/o</div>
 							<div>programmer</div>
 						</div>
 						<div className='perspective-line'>
@@ -43,9 +46,13 @@ const Home: NextPage = () => {
 						</div>
 					</div>
 				</article>
-				<div className='w-full relative mt-28 tablet:mt-36 flex flex-col justify-center items-center'>
-					<div className='  text-center text-primary font-jtm text-2xl z-20'>
-						🚧THIS WEBSITE IS CURRENTLY UNDER CONSTRUCTION🚧
+				<div className='w-full relative mt-28 tablet:mt-40 flex flex-col justify-center items-center'>
+					<div className='flex w-screen text-center flex-row gap-4 justify-center items-center mb-4'>
+						<div className='text-3xl'>🚧</div>
+						<div className='  text-center text-primary font-jtm text-lg tablet:text-xl desktop:text-2xl z-20'>
+							THIS WEBSITE IS CURRENTLY UNDER CONSTRUCTION
+						</div>
+						<div className='text-3xl'>🚧</div>
 					</div>
 					<div className='mx-auto w-screen text-center text-primary font-jtm text-2xl z-20'>
 						(TO SEE MY PORTFOLIO, GO TO MY{' '}

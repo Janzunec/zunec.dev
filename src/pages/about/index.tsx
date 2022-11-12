@@ -54,10 +54,10 @@ const AboutPage: NextPage = () => {
 								/>
 							</div>
 						</h2>
-						<div className='text-lg tablet:text-2xl font-lba italic text-secondary mb-0 z-20'>
+						<div className='text-lg tablet:text-2xl font-lba italic text-secondary mb-2 z-20'>
 							<LightUpString content='</h2>' color='tocyan' />
 						</div>
-						<div className='text-lg tablet:text-2xl font-lba italic text-secondary mb-0 z-10'>
+						<div className='text-lg tablet:text-2xl font-lba italic text-secondary mb-4 z-10'>
 							<LightUpString content='<p>' color='tocyan' />
 						</div>
 
@@ -82,10 +82,10 @@ const AboutPage: NextPage = () => {
 								interesting and modern projects.
 							</div>
 						</div>
-						<div className='text-lg tablet:text-2xl font-lba italic text-secondary desktop:mt-2 z-10'>
+						<div className='text-lg tablet:text-2xl mt-4 font-lba italic text-secondary desktop:mt-6 z-10'>
 							<LightUpString content='</p>' color='tocyan' />
 						</div>
-						<div className='text-lg tablet:text-2xl font-lba italic text-secondary desktop:mt-2 z-20'>
+						<div className='text-lg tablet:text-2xl font-lba italic text-secondary desktop:mt-4 mb-4 z-20'>
 							<LightUpString content='<button>' color='tocyan' />
 						</div>
 						<Link href='/contact'>
@@ -93,10 +93,10 @@ const AboutPage: NextPage = () => {
 								Let&apos;s create something!
 							</button>
 						</Link>
-						<div className='text-lg tablet:text-2xl font-lba italic text-secondary mt-2'>
+						<div className='text-lg tablet:text-2xl font-lba italic text-secondary mt-6'>
 							<LightUpString content='</button>' color='tocyan' />
 						</div>
-						<div className='flex flex-row justify-center tablet:justify-start items-center tablet:gap-4 text-2xl mt-2 desktop:mt-0 text-secondary'>
+						<div className='flex flex-row justify-center tablet:justify-start items-center tablet:gap-4 text-2xl mt-4 desktop:mt-0 text-secondary'>
 							<span className='hidden tablet:inline'>
 								<LightUpString
 									content='Jan.activity ='

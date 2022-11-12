@@ -39,7 +39,7 @@ const ChartJan: React.FC<ChartJanProps> = () => {
 	};
 
 	return (
-		<div className='h-full laptop:h-5/6 w-full flex items-center justify-center pr-4'>
+		<div className='h-full laptop:h-5/6 w-full flex items-center justify-center pr-4 z-20'>
 			<Chart
 				type='bar'
 				data={state}
